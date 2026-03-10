@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What I Am Learning in 2026 | Prasenjit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html">Prasenjit</a>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="../blog/index.html">Blog</a>
+      </nav>
+    </header>
+
+    <article class="article reveal">
+      <p class="post-meta">Mar 10, 2026 · 5 min read</p>
+      <h1>What I Am Learning in 2026</h1>
+      <p>
+        This year I am focused on three themes: system design fundamentals,
+        writing with clarity, and building small tools end to end.
+      </p>
+      <p>
+        I am tracking progress monthly and sharing what works in real projects.
+        The goal is not perfection, it is steady improvement.
+      </p>
+      <p>
+        I will keep this post updated as a public learning log so I can look
+        back and measure growth over time.
+      </p>
+      <p><a href="../blog/index.html">Back to all posts</a></p>
+    </article>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Prasenjit. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/posts.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      runRevealAnimation();
+    </script>
+  </body>
+</html>

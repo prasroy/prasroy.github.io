@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prasenjit | Bio and Blog</title>
+    <meta
+      name="description"
+      content="Personal site for bio, writing, and ideas."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,700&family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">Prasenjit</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <p class="eyebrow">Writer, Builder, Lifelong Learner</p>
+        <h1>
+          I write about technology, ideas, and the craft of building things that
+          matter.
+        </h1>
+        <p class="lead">
+          This is my corner of the internet where I share lessons, experiments,
+          and personal notes from the journey.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="blog/index.html">Read the Blog</a>
+          <a class="btn btn-secondary" href="#about">About Me</a>
+        </div>
+      </section>
+
+      <section id="about" class="about card reveal">
+        <h2>About Me</h2>
+        <p>
+          Hi, I am <strong>Prasenjit</strong>. I am passionate about software,
+          clear writing, and practical creativity. I enjoy turning complex
+          concepts into useful products and understandable stories.
+        </p>
+        <p>
+          Outside work, I read, explore new tools, and document what I learn so
+          others can move faster.
+        </p>
+      </section>
+
+      <section class="featured reveal">
+        <div class="section-head">
+          <h2>Featured Posts</h2>
+          <a class="text-link" href="blog/index.html">View all posts</a>
+        </div>
+        <div id="featured-posts" class="post-grid"></div>
+      </section>
+
+      <section id="contact" class="contact card reveal">
+        <h2>Contact</h2>
+        <p>
+          Reach me at
+          <a href="mailto:prasenjit@example.com">prasenjit@example.com</a>
+          or connect on
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer"
+            >LinkedIn</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Prasenjit. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/posts.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      renderFeaturedPosts("featured-posts", 3);
+      runRevealAnimation();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,279 @@
+:root {
+  --bg: #f8f4e9;
+  --ink: #1f2a2e;
+  --muted: #506065;
+  --card: #fffdf7;
+  --line: #d8d0be;
+  --accent: #0f766e;
+  --accent-2: #ef6c42;
+  --shadow: 0 14px 40px rgba(27, 34, 40, 0.1);
+  --radius: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at 10% 10%, #fff7df 0, #f8f4e9 45%),
+    linear-gradient(160deg, #f8f4e9 0%, #f6efe2 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-shape {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.26;
+  z-index: -1;
+}
+
+.bg-shape-a {
+  width: 360px;
+  height: 360px;
+  background: #7dd3c9;
+  top: -80px;
+  right: -90px;
+}
+
+.bg-shape-b {
+  width: 320px;
+  height: 320px;
+  background: #f7a98d;
+  bottom: -120px;
+  left: -110px;
+}
+
+.site-header,
+main,
+.site-footer {
+  width: min(1040px, 92vw);
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+}
+
+.brand {
+  text-decoration: none;
+  color: var(--ink);
+  font-family: "Fraunces", serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--ink);
+  margin-left: 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after,
+nav a[aria-current="page"]::after {
+  width: 100%;
+}
+
+main {
+  padding-bottom: 28px;
+}
+
+.hero {
+  padding: 34px 0 16px;
+}
+
+.hero-small {
+  padding-top: 16px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces", serif;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  margin: 10px 0 18px;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+}
+
+.lead {
+  color: var(--muted);
+  max-width: 66ch;
+  font-size: 1.06rem;
+}
+
+.hero-actions {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 6px 0 16px;
+}
+
+.text-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.post-card {
+  background: #fffef9;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.post-card h3 {
+  margin: 6px 0 10px;
+}
+
+.post-meta {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.post-card p {
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.post-card a {
+  margin-top: auto;
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.site-footer {
+  padding: 18px 0 30px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.article {
+  width: min(820px, 92vw);
+  margin: 16px auto 34px;
+  padding: 28px;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.article p {
+  line-height: 1.7;
+  color: #37454a;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  .card,
+  .article {
+    padding: 20px;
+  }
+}
