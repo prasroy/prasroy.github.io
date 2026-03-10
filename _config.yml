@@ -25,20 +25,20 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Sarbashis Das, PhD."
+title                    : "Sarbashis DasPrasenjit Roy, MBA."
 title_separator          : "-"
-name                     : "Sarbashis"
+name                     : "Prasenjit"
 description              : "My Personal Website."
-url                      : https://sarbashis.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://prasroy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  :  # the subpath of your site, e.g. "/blog"
-repository               :  sarbashis #GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               :  prasroy #GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
   disqus:
-    shortname            : "sarbashis" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "prasroy" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -109,15 +109,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Sarbashis Das"
-  avatar           : "/assets/images/sarbasis2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "Prasenjit Roy"
+  avatar           : "/assets/images/prasenjit2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Project Manager & Senior Data Scientist| Machine Learning | Deep Learning | Bioinformatics| Data Analyst."
   location         : "Stockholm, Sweden"
-  email            : "dsarbashis@gmail.com"
+  email            : "mr.prasenjitroy@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       #url: "mailto:dsarbashis@gmail.com"
+       #url: "mailto:mr.prasenjitroy@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -126,20 +126,20 @@ author:
     #url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/sarbashis"
+      url: "https://github.com/prasroy"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/sarbashis/"
+      url: "https://www.linkedin.com/in/prasenjit-roy/"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-link"
       url: "https://scholar.google.com/citations?user=MDDoPX0AAAAJ&hl=en"
 
     #- label: "ResearchGate"
     #  icon: "fab fa-researchgate"
-    #  url: "https://www.researchgate.net/profile/Sarbashis_Das"
+    #  url: "https://www.researchgate.net/profile/Prasenjit_Roy"
     #- label: "Pubmed"
     #  icon: "fas fa-fw fa-link"
-    #  url: "https://www.ncbi.nlm.nih.gov/pubmed/?term=sarbashis+das%5BAuthor%5D"
+    #  url: "https://www.ncbi.nlm.nih.gov/pubmed/?term=prasenjit+roy%5BAuthor%5D"
 
 # Site Footer
 footer:
@@ -152,7 +152,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/sarbashis"
+      url: "https://github.com/prasroy"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
